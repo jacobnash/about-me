@@ -1,0 +1,12 @@
+{
+  "name": "about-me",
+  "private": true,
+  "scripts": {
+    "serve": "firebase emulators:start --only hosting",
+    "deploy": "firebase deploy --only hosting --project about-me-a66fd",
+    "validate": "node scripts/validate.mjs",
+    "test": "npm run validate",
+    "domain:status": "node scripts/check-domain.mjs",
+    "domain:dns": "node scripts/setup-dns.mjs"
+  }
+}
