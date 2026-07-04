@@ -24,11 +24,29 @@ body {
   padding: 4rem 1.5rem;
 }
 
+.page-wide {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
 h1 {
   margin: 0 0 0.25rem;
   font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 1.25rem 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .role {
@@ -40,11 +58,77 @@ h1 {
   margin: 0 0 2rem;
 }
 
+.meta,
+.muted {
+  color: var(--muted);
+}
+
+.meta {
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
 .links {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1.25rem;
+}
+
+.section-label {
+  margin: 2rem 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  margin-bottom: 0.75rem;
+}
+
+.project-list a {
+  font-weight: 500;
+}
+
+.project-list .name {
+  font-weight: 500;
+}
+
+.project-list .desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.doc-job {
+  margin-bottom: 1.25rem;
+}
+
+.doc-job p {
+  margin: 0.35rem 0 0;
+}
+
+.doc-job ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.doc-job li {
+  margin-bottom: 0.35rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.92rem;
 }
 
 a {
@@ -65,5 +149,16 @@ a:hover {
 
   body {
     background: #111;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .back {
+    display: none;
   }
 }
