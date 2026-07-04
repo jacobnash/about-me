@@ -94,6 +94,24 @@ h3 {
   margin-bottom: 0.75rem;
 }
 
+.project-list .project-title {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+}
+
+.project-list .repo {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.project-list .repo:hover {
+  color: var(--text);
+}
+
 .project-list a {
   font-weight: 500;
 }
