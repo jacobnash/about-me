@@ -54,16 +54,18 @@ After the secret is set, every merge to `main` redeploys the site.
 
 ## DNS at Namecheap
 
-Add these records for `jacob.nash.engineering` in **Namecheap → nash.engineering → Advanced DNS**:
+Add these in **Namecheap → nash.engineering → Advanced DNS** (same pattern as `feather` and `pizza`):
 
-| Type | Host | Value |
-|------|------|-------|
-| CNAME | `jacob` | `about-me-a66fd.web.app` |
-| TXT | `_acme-challenge.jacob` | run `npm run domain:status` for current value |
+| Site | Type | Host | Value |
+|------|------|------|-------|
+| jacob | CNAME | `jacob` | `about-me-a66fd.web.app` |
+| jacob (SSL) | TXT | `_acme-challenge.jacob` | `npm run domain:status` |
+| corefour | CNAME | `corefour` | `core-four-score.web.app` |
+| corefour (SSL) | TXT | `_acme-challenge.corefour` | `XbivmWpOWAOOiKmLVdne-VvD0tymvNHFo-P0d7gO1bo` |
+| chainwax | CNAME | `chainwax` | `chain-wax-bf20e.web.app` |
+| chainwax (SSL) | TXT | `_acme-challenge.chainwax` | `cMvysx2QhfZ4MnPX-Aq10vXd2kZfp1e4BXs26Lr2qD4` |
 
-```bash
-npm run domain:status
-```
+Existing: `feather.nash.engineering`, `pizza.nash.engineering`.
 
 ### Automated DNS (optional)
 
