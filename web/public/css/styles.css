@@ -331,6 +331,14 @@ a:hover {
 
   .doc-job li,
   li {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.05rem;
+  }
+
+  .doc-job p {
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 0.45rem;
   }
 }
