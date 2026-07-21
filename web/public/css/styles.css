@@ -276,7 +276,8 @@ a:hover {
     border-color: #ccc;
   }
 
-  .back {
+  .back,
+  .no-print {
     display: none;
   }
 }
